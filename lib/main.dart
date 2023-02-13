@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+
 import 'package:provider/provider.dart';
-import 'package:weather_app/models/weather_model.dart';
-import 'package:weather_app/pages/home_screen.dart';
 import 'package:weather_app/pages/splash_screen.dart';
 import 'package:weather_app/providers/weather_provider.dart';
-import 'package:weather_app/styles/themes.dart';
 
 void main() {
   runApp(ChangeNotifierProvider(
@@ -21,18 +18,8 @@ class WeatherApp extends StatelessWidget {
     return MaterialApp(
 
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          // appBarTheme: const AppBarTheme(
-          //   systemOverlayStyle:  SystemUiOverlayStyle(
-          //     statusBarIconBrightness: Brightness.dark,
-          //     statusBarColor: Colors.white,
-          //   )
-          // ),
-         // primarySwatch: Colors.blue,
-
-
-        ),
-        home: SplashScreen(),
+        theme: ThemeData(),
+        home: const SplashScreen(),
       );
   }
 }
