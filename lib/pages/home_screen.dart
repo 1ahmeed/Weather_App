@@ -18,20 +18,14 @@ class HomePage extends StatelessWidget {
           backgroundColor: Colors.blue[300],
           title: const Text('Weather App'),
         ),
-
       body: SingleChildScrollView(
         child: Stack(
           children: [
             Image(image: AssetImage('assets/images/aa.jpg'),height:900,fit: BoxFit.cover,),
-
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                // Padding(
-                //   padding: const EdgeInsets.all(20.0),
-                //   child: Text('Home',style: TextStyle(fontSize: 50,color: Colors.black),),
-                // ),
                 Center(
                   child: Padding(
                     padding: EdgeInsets.only(top: 30.0),
